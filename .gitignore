@@ -1,0 +1,21 @@
+# general unnecessary local machine files
+.DS_STORE
+Thumbs.db
+
+# general unnecessary server-side files
+node_modules
+.log
+.env
+
+# general unnecessary client-side files
+*.map
+.sass-cache*
+
+# ensures large 3D files are not pushed
+public/uploads/*
+!public/uploads/.gitignore
+
+# doubly ensures large 3D files are not pushed
+*.obj
+*.mtl
+*.stl

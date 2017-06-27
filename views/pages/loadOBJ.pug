@@ -1,0 +1,11 @@
+extends ../home
+
+block head
+  script(src="/three/examples/js/loaders/OBJLoader.js")
+
+block body
+  form#uploadForm(ref='uploadForm' action='http://localhost:3000/upload' method='post' encType='multipart/form-data')
+    input(type='file' name='inputFile')
+    input(type='submit' value='Upload!')
+  script(src="/scripts/pages/objloader.js")
+  script(src="/scripts/three/objloader.js")

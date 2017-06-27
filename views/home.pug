@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    script(src="/jquery/jquery.min.js")
+    link(rel="stylesheet" href="/bootstrap/css/bootstrap.min.css")
+    script(src="/bootstrap/js/bootstrap.min.js")
+    script(src="/three/build/three.min.js")
+    link(rel="stylesheet" href="stylesheet.min.css")  
+    title=title || "Generic Website Title"
+    
+    block head
+          
+  body    
+    .navbar.navbar-default
+      .container
+        ul.nav.navbar-nav.navbar-left
+          each link in links
+            li#navbarLinks: a(href=link)= link
+    script(src='/scripts/classes/Viewport.js')
+    
+    block body
+
+    
